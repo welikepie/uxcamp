@@ -36,7 +36,7 @@ height:0px;
 body {
 }
 
-*{box-sizing: border-box;}
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 .outer-wrapper {
 	width: 960px;
@@ -257,7 +257,13 @@ aside {
 					font-size: 14px;
 					line-height: 18px;
 					font-weight: 400;
+
+
+					&:last-of-type {
+						
+					}
 				}
+
 			}
 		}
 	}
