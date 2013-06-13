@@ -137,6 +137,7 @@ body {
 a {
   text-decoration: none;
   color: #1883ba;
+  font-weight: 600;
 }
 html {
   position: relative;
@@ -234,12 +235,18 @@ html {
   -webkit-box-shadow: 0px 0px 2px 1px rgba(255, 255, 255, 0.25);
   box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.25);
   background-color: #ffffff;
-  padding: 48px 24px 48px 24px;
+  padding: 24px 0px 0px 0px;
 }
 .container {
   float: left;
   width: 584px;
-  padding: 0 72px 0 12px;
+  padding: 24px 96px 0px 36px;
+}
+.footer {
+  float: left;
+  width: 100%;
+  padding: 24px 96px 48px 36px;
+  background-color: #f2f2f2;
 }
 .logo {
   margin: 64px 0 16px 120px;
@@ -276,7 +283,7 @@ p {
 aside {
   float: left;
   width: 300px;
-  margin: 180px 0 0 0;
+  margin: 200px 0 0 0;
 }
 aside ul {
   width: 100%;
@@ -394,7 +401,7 @@ aside ul li div img {
   outline: none;
 }
 .time-update-1 {
-  margin-top: -120px;
+  margin-top: -160px;
 }
 .time-update-2 {
   margin-top: -50px;
