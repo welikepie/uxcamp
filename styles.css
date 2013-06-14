@@ -248,8 +248,17 @@ html {
   padding: 24px 96px 48px 36px;
   background-color: #f2f2f2;
 }
+.tandc {
+  width: 50%;
+  float: left;
+}
+.conduct {
+  width: 50%;
+  float: left;
+  padding-left: 96px;
+}
 .logo {
-  margin: 64px 0 16px 120px;
+  margin: 64px 0 16px 100px;
 }
 h1 {
   font-size: 30px;
@@ -401,7 +410,7 @@ aside ul li div img {
   outline: none;
 }
 .time-update-1 {
-  margin-top: -160px;
+  margin-top: -80px;
 }
 .time-update-2 {
   margin-top: -50px;
