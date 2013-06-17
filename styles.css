@@ -430,6 +430,35 @@ aside ul li div img {
   width: 36px;
   outline: none;
 }
+@media only screen and (min-width: 0px) and (max-width: 990px) {
+  .container {
+    width: 514px;
+    padding-right: 24px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 800px) {
+  .outer-wrapper {
+    width: 100%;
+  }
+  .container {
+    width: 100%;
+    padding-right: 36px;
+  }
+  aside {
+    display: none;
+  }
+  .tandc,
+  .conduct {
+    width: 100%;
+    padding: 0;
+  }
+  .logo {
+    position: relative;
+    width: 253px;
+    margin: 24px 0 24px -125px;
+    left: 50%;
+  }
+}
 .time-update-1 {
   margin-top: -80px;
 }
