@@ -464,12 +464,246 @@ aside {
 	}
 }
 
+.schedule {
+	float: left;
+	width: 300px;
+	margin: 200px 0 0 0; 
+
+	ul {
+		width: 100%;
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+		position: relative;
+		z-index: 5;
+		background: url(images/timeline-bg.png);
+		background-repeat: repeat-y;
+		background-position: 201px;
+
+		li {
+			position: relative;
+			width: 185px;
+			margin-top: -70px;
+			background-color: #c299c3;
+			-webkit-box-shadow: 0px 0px 2px 1px rgba(255, 255, 255, 0.25);
+			box-shadow: 0px 4px 12px 0px rgba(000, 000, 000, 0.25);
+			font-weight: 600;
+
+			h3 {
+				height: 36px;
+				line-height: 48px;
+				padding: 0 12px;
+				margin: 12px 0;
+				font-size: 18px;
+				color: #5a5a5a;
+				font-weight: 600;
+
+				&:before {
+				content:'';
+				width: 0px;
+				height: 0px;	
+				border-style: solid;
+				border-width: 16px 0 16px 16px;
+				border-color: transparent transparent transparent #c299c3;
+				display: block;
+				position: absolute;
+				left: 185px;
+				top: 8px;
+				padding: 0 0 0 0;
+		
+				}
+
+			}
+
+
+			&:nth-of-type(odd) {
+
+				&:before {
+				content:'';
+				width: 24px;
+				height: 48px;	
+				
+				display: block;
+				position: absolute;
+				left: -30px;
+				top: 0px;
+				
+				}
+			}
+
+			&:nth-of-type(odd) {
+			}
+
+			&:first-of-type {
+				margin-top: 0;
+				&:before {
+				content:'';
+				
+				background-position: -24px 0px;
+				
+				
+				}
+			}
+
+			&:last-of-type {
+
+				&:before {
+				content:'';
+				
+				height: 320px;	
+				
+				background-position: -48px 0px;
+				background-color: #ffffff;
+				
+				
+				}
+			}
+
+			&:before {
+				content:'';
+				width: 24px;
+				height: 48px;	
+				
+				display: block;
+				position: absolute;
+				left: 192px;
+				top: 0px;
+				background-color: green;
+				padding: 0;
+				background: url(images/timeline-dots.png);
+				background-repeat: no-repeat;
+				background-position: 0px 0px;
+				
+				
+			}
+
+			&:nth-of-type(odd) {
+				margin-left: 222px;
+				h3 {
+				&:before {
+					content:'';
+					width: 0px;
+					height: 0px;
+					border-style: solid;
+					border-width: 16px 16px 16px 0;
+					border-color: transparent #c299c3 transparent transparent;
+					display: block;
+					position: absolute;
+					left: -15px;
+					top: 8px;
+					padding: 0 0 0 0px;
+				}
+				}
+			}
+			&:last-of-type {
+				
+				&:before {
+					
+					
+				}
+			}
+			div {
+				background-color: #ffffff;
+				padding: 12px;
+				margin: 0;
+				color: #2a2a2a;
+				font-size: 14px;
+				line-height: 18px;
+				font-weight: 300;
+				p {
+					color: #2a2a2a;
+					font-size: 14px;
+					line-height: 18px;
+					font-weight: 300;
+
+
+					&:last-of-type {
+
+					}
+				}
+
+				img {
+					width: 36px;
+					outline: none;
+				}
+
+
+			}
+		}
+	}
+
+	table { 
+		float: left;
+		width: 350px;
+		-webkit-box-shadow: 0px 0px 2px 1px rgba(255, 255, 255, 0.25);
+		box-shadow: 0px 4px 12px 0px rgba(000, 000, 000, 0.25);
+		margin-bottom: 24px;
+		color: #5a5a5a;
+
+		tr {
+			&:nth-of-type(odd) { background-color: #c299c3 ; }
+			&:nth-of-type(even) { background-color: #ffffff ; }
+		}
+
+
+		td {
+			padding: 12px 12px 12px 12px;
+			&:first-of-type { border-right: 1px solid #c2c2c2;}
+		}
+	}
+}
+
+.bold {
+		font-weight: bold;
+}
+
+.social {
+	padding-bottom: 80px;
+}
+
+.social h1 {
+	margin-bottom: 60px;
+}
+.social a {
+	background-color: #c299c3;
+	height: 53px;
+	width: 53px;
+	display: inline-block;
+}
+
+.social a span {
+	display: none;
+	overflow: hidden;
+	width: 0;
+	height: 0;
+}
+
+.twitter {
+	background-image: url('images/twitter.png');
+	background-repeat: no-repeat;
+	margin-left: 60px;
+}
+
+.google {
+	background-image: url('images/googleicon.png');
+	background-repeat: no-repeat;
+	margin-left: 80px;
+}
+
+.facebook {
+	background-image: url('images/facebook.png');
+	background-repeat: no-repeat;
+	margin-left: 80px;
+}
+
 @media only screen and (min-width: 0px) and (max-width: 990px) {
 	
 	.container {
 		width: 514px;
 		padding-right: 24px;
 	}
+
+
 }
 
 @media only screen and (min-width: 0px) and (max-width: 800px) {
@@ -479,6 +713,7 @@ aside {
 	}
 
 	.container {
+		float: right;
 		width: 100%;
 		padding-right: 36px;
 	}
@@ -501,6 +736,28 @@ aside {
 
 	}
 
+		.schedule {
+		width: 100%;
+		padding: 0 24px;
+	}
+
+	.schedule table {
+		width: 100%;
+	}
+
+	.twitter {
+		margin-left: 18%;
+	}
+
+	.google {
+		margin-left: 18%;
+	}
+
+	.facebook {
+		margin-left: 18%;
+	}
+
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -510,6 +767,26 @@ aside {
 		padding:24px 12px 0 12px;
 	}
 
+	.twitter {
+		margin-left: 24px;
+	}
+
+	.google {
+		margin-left: 0%;
+	}
+
+	.facebook {
+		margin-left: 0%;
+	}
+
+	.social {
+		padding-bottom: 48px;
+	}
+
+	.social h1 {
+		margin-bottom: 24px;
+	}
+	
 }
 
 .timeline {
